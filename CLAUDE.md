@@ -50,6 +50,10 @@ Site de página única (`index.html`) com três arquivos principais:
 
 Os elementos `.impact-number` com atributo `data-target` são animados pelo `animateCounters()` em `script.js` quando a `.impact-bar` entra em viewport (IntersectionObserver, `threshold: 0.5`). Para adicionar novos contadores, basta incluir o atributo `data-target="<número>"` no elemento.
 
+## Repositório e versionamento
+
+O projeto está publicado em `https://github.com/diiegopaulino/if-landing-page`. **Toda alteração feita no código deve ser commitada e enviada ao repositório remoto** com `git push origin main`.
+
 ## Assets
 
 Todos em `assets/` — imagens JPG/PNG/WebP e dois vídeos MP4 (`INSTITUTO_FRANCISCO.mp4`, `video-hero-bg.mp4`). Logos de parceiros em `assets/parceiros/`.
