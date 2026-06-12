@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 </head>
 <body>
 
@@ -21,11 +22,16 @@
     <li><a href="#parceiros">Parceiros</a></li>
     <li><a href="#voluntario" class="nav-cta">Seja voluntário</a></li>
   </ul>
+  <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
+  <video class="hero-bg" autoplay muted loop playsinline>
+    <source src="assets/video-hero-bg.mp4" type="video/mp4">
+  </video>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <span class="hero-eyebrow">Gávea · Rio de Janeiro</span>
@@ -285,9 +291,9 @@
     <div class="footer-col">
       <h4>Contato</h4>
       <ul>
-        <li><a href="https://www.instagram.com/inst_francisco/" target="_blank">Instagram</a></li>
-        <li><a href="https://www.facebook.com/instfrancisco" target="_blank">Facebook</a></li>
-        <li><a href="https://www.linkedin.com/company/instituto-francisco" target="_blank">Linkedin</a></li>
+        <li><a href="https://www.instagram.com/inst_francisco/" target="_blank"><i class="ph ph-instagram-logo"></i> Instagram</a></li>
+        <li><a href="https://www.facebook.com/instfrancisco" target="_blank"><i class="ph ph-facebook-logo"></i> Facebook</a></li>
+        <li><a href="https://www.linkedin.com/company/instituto-francisco" target="_blank"><i class="ph ph-linkedin-logo"></i> Linkedin</a></li>
       </ul>
     </div>
   </div>

@@ -1,7 +1,21 @@
 
 // Navbar scroll
+const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+hamburger.addEventListener('click', () => {
+  const isOpen = navbar.classList.toggle('menu-open');
+  hamburger.setAttribute('aria-expanded', isOpen);
+});
+navbar.querySelectorAll('ul a').forEach(link => {
+  link.addEventListener('click', () => {
+    navbar.classList.remove('menu-open');
+    hamburger.setAttribute('aria-expanded', false);
+  });
 });
 
 // Counter animation
