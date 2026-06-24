@@ -300,6 +300,7 @@ section { padding: 6rem 5vw; }
 /* PARCEIROS */
 .parceiros { background: var(--off-white); }
 .parceiros-container { max-width: 1000px; margin: 0 auto; text-align: center; }
+.parceiros-container .section-lead { margin: 0 auto; }
 .parceiros-grid {
   display: flex; flex-wrap: wrap;
   justify-content: center; align-items: center;
