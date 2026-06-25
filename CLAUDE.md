@@ -20,11 +20,12 @@ npx serve .
 
 ## Arquitetura
 
-Site de página única (`index.html`) com três arquivos principais:
+Site de página única (`index.html`) com quatro arquivos principais:
 
 - **`index.html`** — toda a estrutura HTML em uma única página com âncoras de navegação: `#sobre`, `#projetos`, `#bolsas`, `#parceiros`, `#voluntario`
 - **`style.css`** — todos os estilos em arquivo único; nenhum pré-processador
-- **`script.js`** — três comportamentos: scroll da navbar, animação de contadores (IntersectionObserver) e handler do formulário de voluntariado
+- **`script.js`** — quatro comportamentos: scroll da navbar, animação de contadores (IntersectionObserver), menu hambúrguer mobile e handler do formulário de voluntariado
+- **`DESIGN.md`** — especificação do sistema de design no formato [design.md](https://github.com/google-labs-code/design.md) do Google Labs; documenta tokens de cores, tipografia, espaçamento, border-radius e componentes em YAML frontmatter + prosa explicativa
 
 ### Sistema de cores (CSS custom properties em `:root`)
 
@@ -44,7 +45,7 @@ Site de página única (`index.html`) com três arquivos principais:
 
 ### Responsividade
 
-Único breakpoint em `@media (max-width: 900px)`. Abaixo dele: grades colapsam para 1 coluna, menu de navegação some (`nav ul { display: none }`).
+Único breakpoint em `@media (max-width: 900px)`. Abaixo dele: grades colapsam para 1 coluna, o menu de navegação (`nav ul`) é ocultado e substituído pelo ícone hambúrguer (`.hamburger`), que exibe um menu dropdown vertical ao ser clicado.
 
 ### Animação de contadores
 
